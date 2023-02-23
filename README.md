@@ -1,10 +1,9 @@
-pako
+@inkarnaterpg/pako
 ==========================================
 
-[![CI](https://github.com/nodeca/pako/workflows/CI/badge.svg)](https://github.com/nodeca/pako/actions)
-[![NPM version](https://img.shields.io/npm/v/pako.svg)](https://www.npmjs.org/package/pako)
+[![NPM version](https://img.shields.io/npm/v/@inkarnaterpg/pako.svg)](https://www.npmjs.org/package/@inkarnaterpg/pako)
 
-> zlib port to javascript, very fast!
+> zlib port to javascript, very fast!  Modified to work correctly with streaming data for deflate.
 
 __Why pako is cool:__
 
@@ -52,7 +51,7 @@ For deflate level 6 results can be considered as correct.
 __Install:__
 
 ```
-npm install pako
+npm install @inkarnaterpg/pako
 ```
 
 

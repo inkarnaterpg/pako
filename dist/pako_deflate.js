@@ -1,5 +1,5 @@
 
-/*! pako 2.1.0 https://github.com/nodeca/pako @license (MIT AND Zlib) */
+/*! @inkarnaterpg/pako 1.0.0 https://github.com/inkarnaterpg/pako @license (MIT AND Zlib) */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -3988,6 +3988,20 @@
       }
 
       if (strm.avail_in === 0) break;
+    }
+
+    if (_flush_mode === Z_SYNC_FLUSH || _flush_mode === Z_FULL_FLUSH) {
+      if (_flush_mode !== Z_FULL_FLUSH) {
+        if (this.chunks.length > 0 && this.chunks[this.chunks.length - 1].length < chunkSize) {
+          this.result = common.flattenChunks(this.chunks.splice(0, this.chunks.length - 2));
+        }
+        else {
+          this.result = common.flattenChunks(this.chunks.splice(0));
+        }
+      }
+      else {
+        this.result = common.flattenChunks(this.chunks.splice(0));
+      }
     }
 
     return true;
