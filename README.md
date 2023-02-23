@@ -5,6 +5,7 @@
 
 > zlib port to javascript, very fast!  Modified to work correctly with streaming data for deflate.
 
+
 __Why pako is cool:__
 
 - Results are binary equal to well known [zlib](http://www.zlib.net/) (now contains ported zlib v1.2.8).
