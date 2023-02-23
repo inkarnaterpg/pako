@@ -8,7 +8,7 @@ on:
 
 env:
     DESIRED_NODE_VERSION: 12
-    DESIRED_PNPM_VERSION: "7.13.4"
+    DESIRED_PNPM_VERSION: "6.35.1"
 
 jobs:
   build-and-deploy:
