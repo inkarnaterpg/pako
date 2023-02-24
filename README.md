@@ -5,6 +5,11 @@
 
 > zlib port to javascript, very fast!  Modified to work correctly with streaming data for deflate.
 
+__Reading data in chunks:__
+
+This fork adds a `.flushResultBuffer()` method to the Deflate class, which will return all currently flushed chunks and clear out Deflate's buffer.
+
+It's worth noting that once Deflate is signaled to finish, the final blocks will need to be read from .result. 
 
 __Why pako is cool:__
 
