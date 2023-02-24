@@ -149,6 +149,7 @@ declare namespace Pako {
         onData(chunk: Data): void;
         onEnd(status: number): void;
         push(data: Data | string, mode?: FlushValues | boolean): boolean;
+        flushResultBuffer(): Uint8Array;
     }
 
     // https://github.com/nodeca/pako/blob/893381abcafa10fa2081ce60dae7d4d8e873a658/lib/inflate.js
