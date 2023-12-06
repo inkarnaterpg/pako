@@ -1,7 +1,7 @@
 {
   "name": "@inkarnaterpg/pako",
   "description": "High speed zlib port to javascript, works in browser & node.js. Modified to work correctly with streaming data for deflate.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "keywords": [
     "zlib",
     "deflate",
@@ -28,11 +28,11 @@
   "types": "./dist/pako.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/pako.d.ts",
       "import": "./dist/pako.esm.mjs"
     },
     "./package.json": "./package.json",
-    "./dist/*": "./dist/*",
-    "types": "./dist/pako.d.ts"
+    "./dist/*": "./dist/*"
   },
   "scripts": {
     "lint": "eslint .",
