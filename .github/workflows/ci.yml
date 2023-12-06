@@ -1,4 +1,4 @@
-name: Build and Publish JsonStreamStringify
+name: Build and Publish Pako
 
 # Controls when the workflow will run
 on:

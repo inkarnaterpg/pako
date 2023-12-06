@@ -31,7 +31,8 @@
       "import": "./dist/pako.esm.mjs"
     },
     "./package.json": "./package.json",
-    "./dist/*": "./dist/*"
+    "./dist/*": "./dist/*",
+    "types": "./dist/pako.d.ts"
   },
   "scripts": {
     "lint": "eslint .",
